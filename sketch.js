@@ -61,6 +61,8 @@ function draw()
   text("HI "+ score, 600,80);
   if(gameState===PLAY)
   {
+    trex.x=camera.x-350;
+    
     if((keyDown("space")|| keyDown(UP_ARROW)||mousePressedOver( trex) )&& trex.y>310)
      {
      trex.velocityY=-12;
